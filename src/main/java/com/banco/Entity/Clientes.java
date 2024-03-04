@@ -40,7 +40,7 @@ public class Clientes implements Serializable {
 		private Date fechaNacimiento;
 
 		@Column(name = "fecha_creacion", nullable = false)
-		private Timestamp fecha_creacion;
+		private Timestamp fechaCreacion;
 
 		@Column(name = "fecha_modificacion", nullable = false)
 		private Timestamp fechaModificacion;
@@ -101,12 +101,12 @@ public class Clientes implements Serializable {
 			this.fechaNacimiento = fechaNacimiento;
 		}
 
-		public Timestamp getFecha_creacion() {
-			return fecha_creacion;
+		public Timestamp getFechaCreacion() {
+			return fechaCreacion;
 		}
 
-		public void setFecha_creacion(Timestamp fecha_creacion) {
-			this.fecha_creacion = fecha_creacion;
+		public void setFechaCreacion(Timestamp fechaCreacion) {
+			this.fechaCreacion = fechaCreacion;
 		}
 
 		public Timestamp getFechaModificacion() {

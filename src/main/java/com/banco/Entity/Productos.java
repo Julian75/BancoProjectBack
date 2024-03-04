@@ -26,8 +26,8 @@ public class Productos implements Serializable {
 	@Column(name = "tipo_cuenta", nullable = false, length = 25)
 	private String tipoCuenta;
 	
-	@Column(name = "numero_cuenta", nullable = false, length = 20)
-	private int numeroCuenta;
+	@Column(name = "numero_cuenta", nullable = false, length = 10)
+	private Long numeroCuenta;
 	
 	@Column(name = "estado", nullable = false, length = 10)
 	private String estado;
@@ -36,7 +36,7 @@ public class Productos implements Serializable {
 	private double saldo;
 
 	@Column(name = "fecha_creacion", nullable = false)
-	private Timestamp fecha_creacion;
+	private Timestamp fechaCreacion;
 
 	@Column(name = "fecha_modificacion", nullable = false)
 	private Timestamp fechaModificacion;
@@ -61,11 +61,11 @@ public class Productos implements Serializable {
 		this.tipoCuenta = tipoCuenta;
 	}
 
-	public int getNumeroCuenta() {
+	public Long getNumeroCuenta() {
 		return numeroCuenta;
 	}
 
-	public void setNumeroCuenta(int numeroCuenta) {
+	public void setNumeroCuenta(Long numeroCuenta) {
 		this.numeroCuenta = numeroCuenta;
 	}
 
@@ -85,12 +85,12 @@ public class Productos implements Serializable {
 		this.saldo = saldo;
 	}
 
-	public Timestamp getFecha_creacion() {
-		return fecha_creacion;
+	public Timestamp getFechaCreacion() {
+		return fechaCreacion;
 	}
 
-	public void setFecha_creacion(Timestamp fecha_creacion) {
-		this.fecha_creacion = fecha_creacion;
+	public void setFechaCreacion(Timestamp fechaCreacion) {
+		this.fechaCreacion = fechaCreacion;
 	}
 
 	public Timestamp getFechaModificacion() {
